@@ -8,10 +8,10 @@ for this project, PHP 7 was used as the language, Laravel 8 was used as the fram
 4. Fetch the user's details
 5. Delete the user
 
-one can only be able to login and register without authentication
+One can only be able to login and register without authentication.
 
 # Actions
-if You want to start the server, download the folder containing the source code, check into the directory through your terminal and ru  the following code: php artisan serve 
+if You want to start the server, download the folder containing the source code, check into the directory through your terminal and run the following code: php artisan serve.
 
 Under the routes folder, in the api.php file, there are the routes which show the specific HTTP requests which when triggered in softwares like Insomnia or Postman will perform the requests demanded in the assessment.
 
