@@ -16,16 +16,16 @@ use Illuminate\Support\Facades\Route;
 
 //Public Routes
 // Route::resource('/profiles', ProfileController::class); 
-Route::post('/login', [AuthController::class, 'login']);
-Route::post('/register', [AuthController::class, 'register']);
+Route::post('/login', [AuthController::class, 'login']); //login user
+Route::post('/register', [AuthController::class, 'register']); //register user
 
 
 
 
 // Protected Routes
 Route::group(['middleware' => ['auth:sanctum']], function() {
-    Route::get('/fetch', [ UserController::class, 'get' ]);
-    Route::put('/update', [ UserController::class, 'update' ]);
-    Route::delete('/delete', [ UserController::class, 'delete' ]);
+    Route::get('/fetch', [ UserController::class, 'get' ]); //fetch users details
+    Route::put('/update', [ UserController::class, 'update' ]); //update users details
+    Route::delete('/delete', [ UserController::class, 'delete' ]); //delete user
     Route::post('/logout', [AuthController::class, 'logout']);
 });
